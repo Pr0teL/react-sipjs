@@ -53,15 +53,12 @@ export const SIPProvider = (props: {
       media: {
         constraints: {
           audio: true,
-          video: true,
+          video: false,
         },
         remote: {
           audio:
             props.options.refAudioRemote ??
-            (refAudioRemote.current as HTMLAudioElement),
-          video:
-            props.options.refVideoRemote ??
-            (refVideoRemote.current as HTMLVideoElement),
+            (refAudioRemote.current as HTMLAudioElement)
         },
       },
       delegate: {
@@ -151,7 +148,6 @@ export const SIPProvider = (props: {
         {children}
       </ProviderContext.Provider>
       <audio ref={refAudioRemote} />
-      <video ref={refVideoRemote} />
     </>
   );
 };
