@@ -22,6 +22,9 @@ export enum RegisterStatus {
 export type SIPAccount = {
   username: string;
   password: string;
+  coturn: string;
+  coturnusername: string;
+  coturnpassword: string;
 };
 
 export interface IProviderContext {

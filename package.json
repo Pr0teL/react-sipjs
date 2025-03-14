@@ -1,7 +1,7 @@
 {
-  "name": "react-sipjs",
-  "version": "0.0.6",
-  "description": "",
+  "name": "@pr0tel/react-sipjs",
+  "version": "0.0.8",
+  "description": "A customized version of react-sipjs without video access requests and with coturn support.",
   "main": "dist/index.umd.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -11,11 +11,27 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build && tsc"
+    "build": "vite build && tsc",
+    "prepare": "npm run build" 
   },
-  "keywords": ["react", "sipjs", "sip", "webrtc", "voip", "call"],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "react",
+    "sipjs",
+    "sip",
+    "webrtc",
+    "voip",
+    "call"
+  ],
+  "author": "Pr0teL",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pr0teL/react-sipjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pr0teL/react-sipjs/issues"
+  },
+  "homepage": "https://github.com/Pr0teL/react-sipjs#readme",
   "devDependencies": {
     "@types/react": "^18.2.23",
     "react": "^18.2.0",
@@ -29,6 +45,6 @@
     "sip.js": "^0.21.2"
   },
   "publishConfig": {
-    "@vanbui1995:registry": "https://npm.pkg.github.com"
+    "access": "public"
   }
 }

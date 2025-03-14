@@ -49,6 +49,14 @@ export const SIPProvider = (props: {
       userAgentOptions: {
         authorizationUsername: sipAccount.username,
         authorizationPassword: sipAccount.password,
+        sessionDescriptionHandlerFactoryOptions: {
+          peerConnectionConfiguration: {
+              iceServers: [
+                  { urls: `stun:${sipAccount.coturn}`, username: sipAccount.coturnusername, credential: sipAccount.coturnpassword },
+                  { urls: `turn:${sipAccount.coturn}`, username: sipAccount.coturnusername, credential: sipAccount.coturnpassword }
+              ]
+          }
+      }
       },
       media: {
         constraints: {
