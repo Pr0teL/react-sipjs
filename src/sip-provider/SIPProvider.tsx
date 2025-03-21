@@ -49,6 +49,7 @@ export const SIPProvider = (props: {
       userAgentOptions: {
         authorizationUsername: sipAccount.username,
         authorizationPassword: sipAccount.password,
+        displayName: sipAccount.displayName,
         sessionDescriptionHandlerFactoryOptions: {
           peerConnectionConfiguration: {
               iceServers: [

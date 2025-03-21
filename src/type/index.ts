@@ -25,6 +25,7 @@ export type SIPAccount = {
   coturn: string;
   coturnusername: string;
   coturnpassword: string;
+  displayName: string;
 };
 
 export interface IProviderContext {

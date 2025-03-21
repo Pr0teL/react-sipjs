@@ -1,6 +1,6 @@
 {
   "name": "@pr0tel/react-sipjs",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A customized version of react-sipjs without video access requests and with coturn support.",
   "main": "dist/index.umd.js",
   "module": "dist/index.mjs",
